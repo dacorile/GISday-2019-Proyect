@@ -1,0 +1,94 @@
+/*This is the primary style on our web site*/
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif	
+    padding: 0;
+    margin: 0;
+    }
+
+.w3-row-padding img {margin-bottom: 12px}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #447F70;}/*Este color es de la barra*/
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+.colorHome{
+  background: #447F70; /*Este color es del HOME de la barra*/
+}
+
+.barBlock{
+  width: 8%;
+}
+
+.barBlockFont{
+  font-size: 10px;
+}
+
+.fullDiv{
+	background: #000;
+	width: 92%;
+	height: 50px;
+	position: relative;
+	padding: 0;	
+}
+.fullFooter{
+	width: 100%;	
+}
+.rightDiv{				
+	background: #1E8E20; 
+	position: relative;	
+	float: right;
+	color: #000;
+	width: 92%;	
+}
+.botonN{
+	color: black;		
+}
+.plotDiv{
+	height: 400px;
+	width: 400%;
+}
+.rightAlign2{
+	position: relative;
+	float: right;
+	width: 92%;
+}
+.divLeft{				
+	position: relative;	
+	float: left;
+	font-size: 20px;
+	color: #fff;
+	width: 46%;	
+	text-align: center;
+}
+.divRight{				
+	position: relative;	
+	float: right;
+	font-size: 20px;
+	color: #fff;
+	width: 46%;	
+	text-align: center;
+}
+#mainWindow {
+      width: 100%;
+      height: 100%;
+    }
+#rightPane {
+  background-color: #E8E8E8;
+  margin: 0px;
+  width: 20%;
+  position: relative;
+  height: 500px;
+}
+
+#map {
+  margin: 0px;
+  padding: 0;
+  width: 70%;
+  height: 500px;
+  position: relative;
+} 

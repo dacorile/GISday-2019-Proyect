@@ -1,0 +1,50 @@
+	
+	div{		
+		background: #000;		
+		color: #fff;
+		font-size: 20px;						
+		top: 0px;	
+		bottom: 0px;
+		height: 100%;
+		width: 100%; 
+	}
+	.divLeft{				
+		background: #1E8E90; 
+		position: relative;	
+		float: left;
+		font-size: 20px;
+		color: #fff;
+		width: 50%;	
+		text-align: center;
+	}
+	.divRight{				
+		background: #1E8E20; 
+		position: relative;	
+		float: right;
+		font-size: 20px;
+		color: #fff;
+		width: 50%;	
+		text-align: center;
+	}
+	.caja{
+		position: absolute;
+		top:0px;
+		bottom:0px;
+		right:0px;
+		left:0px;
+	}
+
+	.boxFixed{
+		position: fixed;
+		top:10px;
+		bottom:0px;
+		right:0px;
+		left:relative;		
+	}
+
+	body{
+	    padding:10;
+	    margin:0;
+	    height:relative;
+	    width: 100%;
+	}	

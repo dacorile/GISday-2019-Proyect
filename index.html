@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<title> WT - Winged Tree</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--Daisy-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="stylesheet" href="style/signStyle.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="script/signScript.js"></script>
+<!--fin daisy-->
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style/baseStyle.css">
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+<script type="text/javascript" src="script/include.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+
+<link rel="stylesheet" href="https://js.arcgis.com/3.28/dijit/themes/claro/claro.css">
+<link rel="stylesheet" href="https://js.arcgis.com/3.28/esri/css/esri.css">
+
+<script src="https://js.arcgis.com/3.28/" data-dojo-config="async:true"></script>
+
+<body class="w3-black">
+
+  <!--Barra de navegacion-->
+  <div w3-include-html="structure/iconBar.html"></div>
+
+  <!--Presentacion animada-->
+  <div w3-include-html="structure/sectionHomeAnimated.html" class="rightAlign"></div>
+
+
+  <!-- Page Content -->
+  <div class="w3-padding-large" id="main">
+
+  
+  <div w3-include-html="structure/sectionHome.html"></div>   
+
+  <!-- About Section -->
+  <div w3-include-html="structure/sectionAbout.html"></div>  
+
+  <!--Plot section-->
+  
+  <div w3-include-html="structure/sectionPlots.html"></div>
+
+  <div style="width: 50%" class="w3-content w3-justify w3-text-grey w3-padding-64">
+    <div>
+      <canvas  id="myCanvas" width="300" height="300" style="border:1px solid #000000;">
+              Your browser does not support the HTML5 canvas tag.
+      </canvas>
+  </div>
+  </div>
+  <br><br>
+
+  <!--Seccion segundo mapa-->
+  <div w3-include-html="structure/sectionMap1.html"></div>
+
+  <!--Seccion primer mapa-->
+  <div w3-include-html="structure/sectionMap2.html"></div>  
+
+  <br>
+  <!-- Portfolio Section -->
+  <div w3-include-html="structure/sectionPortafolio.html"></div>
+
+  <!-- Contact Section -->
+  <div w3-include-html="structure/sectionContact.html"></div> 
+  
+  <!-- Footer -->
+  <div w3-include-html="structure/sectionFooter.html"></div>
+
+<!-- END PAGE CONTENT -->
+</div>
+<!--<div class="rightDiv"><h1>Hello world</h1></div>-->
+
+<!--El iframe de survey-->
+      <div class="modal fade" id="signModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"  >Registro</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <style>
+                  </style>
+                  <div class="embed-container">
+                    <iframe name="survey123webform" width="500" height="400" frameborder="0" marginheight="0" marginwidth="0" title="Registro de Lugar de Entretenimiento" src="https://arcg.is/1y1PKj">
+                    </iframe>
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<script type="text/javascript">includeHTML()</script>
+
+</body>
+<script>
+  plot1();
+</script>
+</html>

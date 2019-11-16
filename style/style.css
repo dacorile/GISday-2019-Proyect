@@ -1,0 +1,87 @@
+.container-cover{
+    width: 92%;
+    height: 500px;
+    background-image: url(../img/bkg.jpg);
+    background-size: 150%;
+    animation: imagemovement 20s infinite linear alternate;
+    position: relative;
+    float: right;
+}
+
+@keyframes imagemovement{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+.degraded-gradient{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, gray);
+    opacity: 0.5;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    left: 15px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: black;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+
+.container {
+    padding: 10px;
+}
+
+.btn-customized{
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn-customized:hover, .btn-customized:focus {
+    border: 1px solid #333;
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: #232324;
+    color: white;
+    padding: 5px;
+}
